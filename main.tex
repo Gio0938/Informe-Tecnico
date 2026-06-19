@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper,oneside]{report}
+
+\input{config/paquetes}
+\input{config/configuracion}
+
+\begin{document}
+
+\pagenumbering{roman}
+\input{portada/portada}
+
+\chapter*{Resumen Ejecutivo}
+Espacio para el resumen ejecutivo.
+
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+
+\pagenumbering{arabic}
+
+\input{capitulos/01_introduccion}
+\input{capitulos/02_descripcion_software}
+\input{capitulos/03_puntos_funcion}
+\input{capitulos/04_story_points}
+\input{capitulos/05_casos_uso}
+\input{capitulos/06_comparacion}
+\input{capitulos/07_conclusiones}
+
+% \bibliographystyle{IEEEtran}
+% \bibliography{referencias}
+
+\appendix
+\input{anexos/anexo_a}
+\input{anexos/anexo_b}
+\input{anexos/anexo_c}
+
+\end{document}
